@@ -80,7 +80,6 @@ def main():
     tracks = st.sidebar.multiselect(
         "Escolha a(s) Faixa(s)", 
         options=df['Track'].dropna().unique(),
-        default=df['Track'].dropna().unique()[:5]  # Seleção padrão das primeiras 5 faixas
     )
     
     # Filtro por Data de Lançamento
